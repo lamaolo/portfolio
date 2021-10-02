@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  border-radius: 8px;
   font-weight: 500;
   font-size: 1.6rem;
   cursor: pointer;
@@ -19,6 +18,7 @@
   background: black;
 }
 
-.button.outline:hover {
+.button.outline:hover,
+.button.outline:focus {
   background: rgba(252, 92, 124, 0.15);
 }

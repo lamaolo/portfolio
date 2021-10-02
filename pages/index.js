@@ -1,7 +1,7 @@
-import { useState } from "react";
 import Head from "next/head";
-import { Slant as Hamburger } from "hamburger-react";
 import Link from "next/link";
+import { useState } from "react";
+import { Slant as Hamburger } from "hamburger-react";
 
 import Menu from "../components/Menu";
 import Hero from "../components/Hero";
@@ -9,6 +9,8 @@ import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 import Separator from "../components/Separator";
 import MyProjects from "../components/MyProjects";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,6 +37,9 @@ export default function Home() {
         <Hero />
         <Separator text="My projects" />
         <MyProjects />
+        <Separator text="Contact me" />
+        <Contact />
+        <Footer />
       </main>
       {isMenuOpen ? <Menu /> : null}
     </>
