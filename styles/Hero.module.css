@@ -51,11 +51,14 @@
   position: absolute;
   right: 0;
   margin-top: 200px;
-  height: 500px;
-  width: 320px;
-  background: linear-gradient(90deg, #000000 21px, transparent 1%) center,
-    linear-gradient(#000000 21px, transparent 1%) center, #ffffff;
-  background-size: 23px 23px;
+  height: 600px;
+  width: 600px;
+  background-size: 600px;
+  /* background: linear-gradient(90deg, #000000 21px, transparent 1%) center,
+  linear-gradient(#000000 21px, transparent 1%) center, #ffffff;
+  background-size: 23px 23px; */
+  background-image: url("https://media1.giphy.com/media/YRhYlbUE2LSmhLe26r/giphy.gif");
+  background-repeat: no-repeat;
 }
 
 @keyframes hue {

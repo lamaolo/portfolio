@@ -19,6 +19,6 @@
 }
 
 .button.outline:hover,
-.button.outline:focus {
+.button.outline:focus-within {
   background: rgba(252, 92, 124, 0.15);
 }
