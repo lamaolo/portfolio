@@ -38,6 +38,15 @@ const MOCK_PROJECTS = [
     liveViewLink: "https://scrum-io.vercel.app/",
     githubLink: "https://github.com/SHIMER-jpg/Scrum.io/",
   },
+  {
+    id: 5,
+    name: "Scrum.io",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    picture: "/scrum-io-desktop.JPG",
+    liveViewLink: "https://scrum-io.vercel.app/",
+    githubLink: "https://github.com/SHIMER-jpg/Scrum.io/",
+  },
 ];
 
 const MyProjects = () => {

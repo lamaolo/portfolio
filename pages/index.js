@@ -21,15 +21,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.container}>
-        <header className={styles.header}>
+      <header className={`${styles.header} ${isMenuOpen ? styles.noBg : null}`}>
+        <div>
           <Link href="/">lamaolo</Link>
           <Hamburger
             color="white"
             toggled={isMenuOpen}
             toggle={setIsMenuOpen}
           ></Hamburger>
-        </header>
+        </div>
+      </header>
+      <main className={styles.container}>
         <Hero />
         <Separator text="My projects" />
         <MyProjects />

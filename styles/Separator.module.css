@@ -1,26 +1,20 @@
 .container {
-  background: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
+  background-image: linear-gradient(to right, #6a82fb, #fc5c7d);
 }
 
 .content {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
 .content h2 {
   margin: 0;
-  font-size: 4.5rem;
-  background-clip: text;
-  background-image: linear-gradient(to right, #6a82fb, #fc5c7d);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-weight: 800;
+  font-size: 3.8rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
