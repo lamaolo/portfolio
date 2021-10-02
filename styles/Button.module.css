@@ -1,0 +1,24 @@
+.button {
+  all: unset;
+  padding: 12px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border: 1px solid black;
+  color: white;
+  background: #fc5c7d;
+  transition: all 0.15s ease-in-out;
+}
+
+.button.outline {
+  border: 1px solid #fc5c7d;
+  background: black;
+}
+
+.button.outline:hover {
+  background: rgba(252, 92, 124, 0.15);
+}

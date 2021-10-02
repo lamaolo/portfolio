@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.content p {
+  margin: 0 0 -8px 4px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  background-clip: text;
+  background-image: linear-gradient(to right, #6a82fb, #fc5c7d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: hue 3s infinite linear;
+}
+
+.content .subtitle {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  max-width: 450px;
+}
+
+.cta {
+  margin-top: 15px;
+}
+
+.decorationDots {
+  position: absolute;
+  right: 0;
+  margin-top: 200px;
+  height: 500px;
+  width: 320px;
+  background: linear-gradient(90deg, #000000 21px, transparent 1%) center,
+    linear-gradient(#000000 21px, transparent 1%) center, #ffffff;
+  background-size: 23px 23px;
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}

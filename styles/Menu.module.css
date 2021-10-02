@@ -1,0 +1,44 @@
+.container {
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background: #fc5c7d; /* fallback for old browsers */
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.content {
+  padding: 25px 30px;
+  /* margin: 70px auto 0; */
+  max-width: 1400px;
+}
+
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
