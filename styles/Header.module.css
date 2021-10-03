@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: black;
+  z-index: 1000;
+}
+
+.header.noBg {
+  background: none;
+}
+
+.header > div {
+  padding: 15px 30px;
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header div a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}

@@ -1,0 +1,18 @@
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+.container p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.container a {
+  color: var(--color2);
+  font-weight: 600;
+}

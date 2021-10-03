@@ -1,0 +1,143 @@
+.container {
+  position: relative;
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.content p {
+  margin: 0 0 -8px 4px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  background-clip: text;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: hue 3s infinite linear;
+}
+
+.content .subtitle {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  max-width: 450px;
+}
+
+.cta {
+  margin-top: 15px;
+  margin-left: 4px;
+}
+
+.decorationDots {
+  position: absolute;
+  right: 0;
+  margin-top: 70px;
+  height: 600px;
+  width: 600px;
+  background-size: 600px;
+  /* background: linear-gradient(90deg, #000000 21px, transparent 1%) center,
+  linear-gradient(#000000 21px, transparent 1%) center, #ffffff;
+  background-size: 23px 23px; */
+  background-image: url("/hero-gif.gif");
+  background-repeat: no-repeat;
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .content h1 {
+    font-size: 4.8rem;
+  }
+
+  .content .subtitle {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    max-width: 390px;
+  }
+
+  .decorationDots {
+    margin-top: 180px;
+    width: 350px;
+    background-size: 400px;
+  }
+}
+
+/* 1px after iPad screen ;) */
+@media screen and (max-width: 767px) {
+  .content {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content h1,
+  .cta {
+    text-align: center;
+    z-index: 100;
+  }
+
+  .content .subtitle {
+    text-align: center;
+    z-index: 100;
+  }
+
+  .decorationDots {
+    height: 350px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+
+  .content p {
+    margin-bottom: 5px;
+  }
+
+  .content p,
+  .content .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .decorationDots {
+    height: 350px;
+    width: 350px;
+    background-size: 350px;
+  }
+}

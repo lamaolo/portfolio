@@ -1,0 +1,39 @@
+.container {
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 30px 30px;
+}
+
+.contact {
+  display: flex;
+  gap: 50px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.socials {
+  width: 70%;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 30px;
+}
+
+.socialIcons a svg:hover {
+  transition: all 0.15s ease-in-out;
+  color: #fc5c7d !important;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+  }
+}

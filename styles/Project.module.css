@@ -1,0 +1,14 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 30px 0;
+  display: flex;
+  gap: 35px;
+  color: white;
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    flex-direction: column;
+  }
+}

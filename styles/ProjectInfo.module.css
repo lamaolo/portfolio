@@ -1,0 +1,133 @@
+.projectInfo {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.projectInfo h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.projectInfo h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.infoGroup {
+  margin-bottom: 25px;
+}
+
+.infoGroup p:nth-child(1) {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.infoGroup .descriptionP,
+.infoGroup li {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  line-height: 20px;
+  font-size: 1.5rem;
+}
+
+.infoGroup .descriptionP:not(:first-child) {
+  margin-top: 15px;
+}
+
+.techStack {
+  padding: 0;
+  list-style: none;
+}
+
+.techStack li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.techStack li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--color2);
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.actions a {
+  align-self: normal;
+  width: 100%;
+  display: block;
+}
+
+.actions .actionTriggerWrapper {
+  background: var(--gradient);
+  padding: 3px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.actionTrigger {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background: black;
+  transition: all 0.25s ease-in-out;
+}
+
+.actionTrigger:hover {
+  background: var(--gradient);
+  cursor: pointer;
+}
+
+.actionTrigger p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+}
+
+.actionTrigger svg {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (max-width: 930px) {
+  .projectInfo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projectInfo h1 {
+    font-size: 3rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

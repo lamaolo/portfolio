@@ -1,0 +1,59 @@
+.projectImage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  box-shadow: 6px 6px 0 var(--color2) !important;
+  border: 2px solid var(--color2) !important;
+}
+
+.projectImage .imageContainer img {
+  margin-top: 10px;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+.imageSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.imagePreview {
+  width: 80px;
+  height: 80px;
+  padding: 4px;
+  position: relative;
+}
+
+.imagePreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.imageWrapper {
+  padding: 3px;
+}
+
+.imageWrapper.selectedImg {
+  padding: 3px;
+  background: var(--gradient) !important;
+}
+
+.imagePreview.selectedImg {
+  padding: 2px;
+}
+
+.imagePreview img {
+  transition: all 0.15s ease-in-out;
+  background: black;
+  padding: 4px;
+  object-fit: cover !important;
+}

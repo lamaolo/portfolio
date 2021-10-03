@@ -1,0 +1,29 @@
+.button {
+  all: unset;
+  padding: 12px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border: 1px solid black;
+  color: white;
+  background: var(--color2);
+  transition: all 0.15s ease-in-out;
+}
+
+.button.outline {
+  border: 1px solid var(--color2);
+  background: black;
+}
+
+.button.outline:hover,
+.button.outline:focus-within {
+  background: rgba(252, 92, 124, 0.15);
+}
+
+.button.outline[disabled] {
+  background: rgba(252, 92, 124, 0.15) !important;
+  opacity: 0.4 !important;
+}
