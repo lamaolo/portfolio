@@ -24,6 +24,6 @@
 }
 
 .button.outline[disabled] {
-  background: rgba(252, 92, 124, 0.15);
-  opacity: 0.4;
+  background: rgba(252, 92, 124, 0.15) !important;
+  opacity: 0.4 !important;
 }
