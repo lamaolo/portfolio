@@ -27,10 +27,4 @@ const ProjectCard = ({ name, id, pictures, shortDescription }) => {
   );
 };
 
-const ArrowIcon = (props) => (
-  <div className={styles.ArrowIcon}>
-    <p>View project</p>
-  </div>
-);
-
 export default ProjectCard;

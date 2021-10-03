@@ -1,5 +1,4 @@
-import { RiGithubLine } from "react-icons/ri";
-import { RiLinkedinLine } from "react-icons/ri";
+import { RiGithubLine, RiLinkedinLine } from "react-icons/ri";
 import { AiOutlineMail } from "react-icons/ai";
 
 import styles from "../styles/Contact.module.css";

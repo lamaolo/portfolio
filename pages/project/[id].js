@@ -2,55 +2,11 @@
 import Head from "next/head";
 import { useState } from "react";
 
-import {
-  SiCss3,
-  SiNodeDotJs,
-  SiSocketDotIo,
-  SiMongodb,
-  SiReact,
-  SiGithub,
-  SiStyledComponents,
-  SiNextDotJs,
-  SiSass,
-  SiJavascript,
-  SiHtml5,
-  SiRedux,
-} from "react-icons/si";
-import { BsEyeFill } from "react-icons/bs";
+import ProjectImage from "../../components/ProjectImage";
 
 import projects from "../../projects.json";
 import styles from "../../styles/Project.module.css";
-
-const mapTechnologyToIcon = (technology) => {
-  switch (technology.toLowerCase()) {
-    case "mongodb":
-      return <SiMongodb size={20} />;
-    case "css":
-      return <SiCss3 size={20} />;
-    case "express":
-      return <SiNodeDotJs size={20} />;
-    case "nodejs":
-      return <SiNodeDotJs size={20} />;
-    case "react":
-      return <SiReact size={20} />;
-    case "socket.io":
-      return <SiSocketDotIo size={20} />;
-    case "nextjs":
-      return <SiNextDotJs size={20} />;
-    case "styled components":
-      return <SiStyledComponents size={20} />;
-    case "vanilla js":
-      return <SiJavascript size={20} />;
-    case "html":
-      return <SiHtml5 size={20} />;
-    case "scss":
-      return <SiSass size={20} />;
-    case "redux":
-      return <SiRedux size={20} />;
-    default:
-      return "";
-  }
-};
+import ProjectInfo from "../../components/ProjectInfo";
 
 export default function Home({ project }) {
   const [imageToShow, setImageToShow] = useState(project.pictures[0]);
@@ -67,76 +23,13 @@ export default function Home({ project }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.container}>
-        <section className={styles.projectImage}>
-          <div className={styles.imageContainer}>
-            <img src={imageToShow} alt={project.name} />
-          </div>
-          <div className={styles.imageSelector}>
-            {project.pictures.map((picture, i) => (
-              <div
-                key={i}
-                onClick={() => handleImageClick(picture)}
-                className={`${styles.imagePreview} ${
-                  imageToShow === picture && styles.selectedImg
-                }`}
-              >
-                <img src={picture} alt={project.name} />
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className={styles.projectInfo}>
-          <h1 style={{ color: "white" }}>{project.name}</h1>
-          <div className={styles.infoGroup}>
-            <p>Description</p>
-            {project.description.split("\n").map((t, i) => (
-              <p className={styles.descriptionP} key={i}>
-                {t}
-              </p>
-            ))}
-          </div>
-          <div className={styles.infoGroup}>
-            <p>Tech stack</p>
-            <ul className={styles.techStack}>
-              {project.techStack.map((technology, i) => (
-                <li key={i}>
-                  {mapTechnologyToIcon(technology)}
-                  {technology}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className={styles.actions}>
-            {project.githubLink && (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <article className={styles.actionTriggerWrapper}>
-                  <div className={styles.actionTrigger}>
-                    <SiGithub size={30} />
-                    <p>View source code</p>
-                  </div>
-                </article>
-              </a>
-            )}
-            {project.liveViewLink && (
-              <a
-                href={project.liveViewLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <article className={styles.actionTriggerWrapper}>
-                  <div className={styles.actionTrigger}>
-                    <BsEyeFill size={30} />
-                    <p>Live view</p>
-                  </div>
-                </article>
-              </a>
-            )}
-          </div>
-        </section>
+        <ProjectImage
+          name={project.name}
+          pictures={project.pictures}
+          imageToShow={imageToShow}
+          handleImageClick={handleImageClick}
+        />
+        <ProjectInfo project={project} />
       </main>
     </>
   );

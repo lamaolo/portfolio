@@ -1,0 +1,44 @@
+.projectImage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImage .imageContainer img {
+  margin-top: 10px;
+  box-shadow: 6px 6px 0 var(--color2);
+  border: 2px solid var(--color2);
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.imageSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.imagePreview {
+  width: 80px;
+  height: 80px;
+}
+
+.imagePreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.imagePreview.selectedImg {
+  background: var(--gradient);
+  padding: 2px;
+}
+
+.imagePreview.selectedImg img {
+  transition: all 0.15s ease-in-out;
+  background: black;
+  padding: 4px;
+}

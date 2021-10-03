@@ -13,6 +13,6 @@
 }
 
 .container a {
-  color: #fc5c7d;
+  color: var(--color2);
   font-weight: 600;
 }

@@ -27,7 +27,7 @@
   font-weight: bolder;
   letter-spacing: -2px;
   background-clip: text;
-  background-image: linear-gradient(to right, #6a82fb, #fc5c7d);
+  background-image: var(--gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -o-text-fill-color: transparent;
@@ -50,14 +50,14 @@
 .decorationDots {
   position: absolute;
   right: 0;
-  margin-top: 200px;
+  margin-top: 70px;
   height: 600px;
   width: 600px;
   background-size: 600px;
   /* background: linear-gradient(90deg, #000000 21px, transparent 1%) center,
   linear-gradient(#000000 21px, transparent 1%) center, #ffffff;
   background-size: 23px 23px; */
-  background-image: url("https://media1.giphy.com/media/YRhYlbUE2LSmhLe26r/giphy.gif");
+  background-image: url("/hero-gif.gif");
   background-repeat: no-repeat;
 }
 
@@ -67,5 +67,77 @@
   }
   to {
     filter: hue-rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .content h1 {
+    font-size: 4.8rem;
+  }
+
+  .content .subtitle {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    max-width: 390px;
+  }
+
+  .decorationDots {
+    margin-top: 180px;
+    width: 350px;
+    background-size: 400px;
+  }
+}
+
+/* 1px after iPad screen ;) */
+@media screen and (max-width: 767px) {
+  .content {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content h1,
+  .cta {
+    text-align: center;
+    z-index: 100;
+  }
+
+  .content .subtitle {
+    text-align: center;
+    z-index: 100;
+  }
+
+  .decorationDots {
+    height: 350px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+
+  .content p {
+    margin-bottom: 5px;
+  }
+
+  .content p,
+  .content .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .decorationDots {
+    height: 350px;
+    width: 350px;
+    background-size: 350px;
   }
 }
