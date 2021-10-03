@@ -1,8 +1,8 @@
 import styles from "../styles/Separator.module.css";
 
-const Separator = ({ text }) => {
+const Separator = ({ id, text }) => {
   return (
-    <section className={styles.container}>
+    <section id={id} className={styles.container}>
       <div className={styles.content}>
         <h2>{text}</h2>
       </div>

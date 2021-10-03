@@ -2,66 +2,117 @@
   {
     "id": 1,
     "name": "Scrum.io",
-    "description": "Scrum.io is a platform designed to manage projects based on agile methodologies, providing a set of tools and utilities for both scrum masters and developers.",
+    "shortDescription": "Final project of SoyHenry's full stack development bootcamp. Scrum.io is a SCRUM management system, which aims to provide a complete set of tools for both SCRUM Masters and developers.",
+    "description": "Scrum.io is a project developed in a team of 7 people and was made as the final project of SoyHenry's full stack development bootcamp. It's a SCRUM management system, designed to provide a set of tools for both SCRUM masters and developers. It includes a lot of features, such as tracking of each developer's perfomance, changes in real time, notifications, interactive poker planning rooms, charts to measure the development of the project (burndown chart and customized statistics), chat in real time, among others. \n In this project I worked mainly on UI, frontend design and in all the real-time features.",
     "pictures": [
       "/scrum-io/scrum-io-1.JPG",
+      "/scrum-io/scrum-io-4.JPG",
       "/scrum-io/scrum-io-2.JPG",
       "/scrum-io/scrum-io-3.JPG"
     ],
     "liveViewLink": "https://scrum-io.vercel.app/",
     "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
-    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+    "techStack": [
+      "React",
+      "CSS",
+      "Redux",
+      "MongoDB",
+      "Express",
+      "NodeJS",
+      "Socket.io"
+    ]
   },
   {
     "id": 2,
-    "name": "Scrum.io",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "name": "Ecommerce bakery",
+    "shortDescription": "Simple ecommerce with pastry theme. I made this project when I was learning NextJS by self-taught.",
+    "description": "A simple project I made to investigate about NextJS and understand how it works. In this project I used all the main features of this framework, such as Static Site Generation (SSG), API Routes, CSS-In-JS, among others.",
     "pictures": [
-      "/scrum-io/scrum-io-1.JPG",
-      "/scrum-io/scrum-io-2.JPG",
-      "/scrum-io/scrum-io-3.JPG"
+      "/ecommerce/ecommerce-1.JPG",
+      "/ecommerce/ecommerce-2.JPG",
+      "/ecommerce/ecommerce-3.JPG",
+      "/ecommerce/ecommerce-4.JPG"
     ],
-    "liveViewLink": "https://scrum-io.vercel.app/",
-    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
-    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
-  },
-  {
-    "id": 3,
-    "name": "Scrum.io",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    "pictures": [
-      "/scrum-io/scrum-io-1.JPG",
-      "/scrum-io/scrum-io-2.JPG",
-      "/scrum-io/scrum-io-3.JPG"
-    ],
-    "liveViewLink": "https://scrum-io.vercel.app/",
-    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
-    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+    "liveViewLink": "https://pasteleria-ecommerce-nextjs-lamaolo.vercel.app/",
+    "githubLink": "https://github.com/lamaolo/ecommerce-nextjs",
+    "techStack": ["NextJS", "CSS", "MongoDB", "Styled components"]
   },
   {
     "id": 4,
-    "name": "Scrum.io",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
-    "pictures": [
-      "/scrum-io/scrum-io-1.JPG",
-      "/scrum-io/scrum-io-2.JPG",
-      "/scrum-io/scrum-io-3.JPG"
-    ],
+    "name": "Bookmark landing page",
+    "shortDescription": "Landing page of Bookmark, this is my solution to a challenge from FrontendMentor.",
+    "description": "This is my solution to one of the challenges from FrontendMentor, in which I had to recreate the landing page of Bookmark from 0 from a given design. These challenges are very good to improve my CSS & responsive design skills and also gain the ability to recreate a website in HTML/CSS from an image.",
+    "pictures": ["/bookmark/bookmark-1.JPG", "/bookmark/bookmark-2.JPG"],
+    "liveViewLink": "https://bookmark-landingpage-lamaolo.vercel.app/",
+    "githubLink": "https://github.com/lamaolo/bookmark-landingpage",
+    "techStack": ["React", "CSS", "Styled components"]
+  },
+  {
+    "id": 3,
+    "name": "Personal portfolio",
+    "shortDescription": "My personal portfolio! The page I made to introduce myself and show the projects I've worked on.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "pictures": ["/portfolio/portfolio-1.JPG", "/portfolio/portfolio-1.JPG"],
     "liveViewLink": "https://scrum-io.vercel.app/",
     "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
     "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
   },
+
+  {
+    "id": 6,
+    "name": "Manage landing page",
+    "shortDescription": "Landing page of Manage, this is my solution to a challenge from FrontendMentor.",
+    "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate the landing page of 'Manage'. This challenge was useful to consolidate my knowledge of HTML and CSS layout.",
+    "pictures": ["/manage/manage-1.JPG", "/manage/manage-2.JPG"],
+    "liveViewLink": "https://lamaolo.github.io/manage-landingpage/",
+    "githubLink": "https://github.com/lamaolo/manage-landingpage",
+    "techStack": ["CSS", "HTML"]
+  },
+  {
+    "id": 7,
+    "name": "React Rock, Paper or Scissors",
+    "shortDescription": "Minigame recreated in React with animations, this is my solution to a challenge from FrontendMentor.",
+    "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate the famous game 'rock, papers or scissors'. This challenge was useful to consolidate my knowledge of animations on CSS & component management on React.",
+    "pictures": [
+      "/paper-rock-scissors/paper-rock-scissors-1.JPG",
+      "/paper-rock-scissors/paper-rock-scissors-2.JPG"
+    ],
+    "liveViewLink": "https://react-rock-paper-scissors-lamaolo.vercel.app/",
+    "githubLink": "https://github.com/lamaolo/react-rock-paper-scissors",
+    "techStack": ["React", "CSS", "HTML"]
+  },
   {
     "id": 5,
-    "name": "Scrum.io",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "name": "Room landing page",
+    "shortDescription": "Landing page of Room, this is my solution to a challenge from FrontendMentor.",
+    "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate the landing page of 'Room'. This particular challenge was extremly useful when I was learning about layouts and positioning in CSS.",
+    "pictures": ["/room/room-1.JPG", "/room/room-2.JPG"],
+    "liveViewLink": "https://lamaolo.github.io/room-landingpage/",
+    "githubLink": "https://github.com/lamaolo/room-landingpage",
+    "techStack": ["Vanilla JS", "SCSS", "HTML"]
+  },
+  {
+    "id": 9,
+    "name": "Easy bank landing page",
+    "shortDescription": "Landing page of Easy Bank. This is my solution to a challenge from FrontendMentor",
+    "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate a whole landing page from an image. This was the first entire project that I built when I started to learn about CSS/HTML layout, responsive design & React.",
+    "pictures": ["/easy-bank/easybank-1.JPG", "/easy-bank/easybank-2.JPG"],
+    "liveViewLink": "https://easybank-landing-git-main-lamaolo.vercel.app/",
+    "githubLink": "https://github.com/lamaolo/easybank-landing",
+    "techStack": ["React", "CSS", "HTML"]
+  },
+  {
+    "id": 8,
+    "name": "IP tracker",
+    "shortDescription": "Application that tracks a given IP and show its geolocalization on the map, this is my solution to a challenge from FrontendMentor.",
+    "description": "This is my solution to a challenge from Frontend Mentor, in which I had to create an app that tracks a given IP address an shows it geolocalization on a map. This challenge was useful to learn how to use and implement external APIs",
     "pictures": [
-      "/scrum-io/scrum-io-1.JPG",
-      "/scrum-io/scrum-io-2.JPG",
-      "/scrum-io/scrum-io-3.JPG"
+      "/ip-tracker/ip-tracker-1.JPG",
+      "/ip-tracker/ip-tracker-2.JPG",
+      "/ip-tracker/ip-tracker-3.JPG"
     ],
-    "liveViewLink": "https://scrum-io.vercel.app/",
-    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
-    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+    "liveViewLink": "https://ip-tracker.lamaolo.vercel.app/",
+    "githubLink": "https://github.com/lamaolo/ip-tracker",
+    "techStack": ["React", "CSS", "HTML"]
   }
 ]

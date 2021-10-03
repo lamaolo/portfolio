@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from "../styles/ProjectCard.module.css";
 
-const ProjectCard = ({ name, id, pictures, description }) => {
+const ProjectCard = ({ name, id, pictures, shortDescription }) => {
   return (
     <article className={styles.container}>
       <div className={styles.content}>
@@ -16,8 +16,8 @@ const ProjectCard = ({ name, id, pictures, description }) => {
           alt={name}
         />
         <section className={styles.info}>
-          <h3>Scrum.io</h3>
-          <p>{description}</p>
+          <h3>{name}</h3>
+          <p>{shortDescription}</p>
           <Link href={`/project/${id}`} passHref={true}>
             View project
           </Link>

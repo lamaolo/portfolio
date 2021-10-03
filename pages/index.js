@@ -16,9 +16,9 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <Separator text="My projects" />
+        <Separator id="my-projects" text="My projects" />
         <MyProjects />
-        <Separator text="Contact me" />
+        <Separator id="contact-me" text="Contact me" />
         <Contact />
         <Footer />
       </main>

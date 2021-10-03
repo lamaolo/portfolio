@@ -84,11 +84,17 @@
   font-size: 2rem;
 }
 
-.infoGroup p:nth-child(2),
+.infoGroup .descriptionP,
 .infoGroup li {
   margin: 0;
   font-weight: 400;
-  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+  line-height: 20px;
+  font-size: 1.5rem;
+}
+
+.infoGroup .descriptionP:not(:first-child) {
+  margin-top: 15px;
 }
 
 .techStack {

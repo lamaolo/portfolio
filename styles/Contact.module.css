@@ -18,42 +18,6 @@
   margin-bottom: 40px;
 }
 
-.form {
-  width: 100%;
-}
-
-.formGroup {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.formGroup label {
-  color: white;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.formGroup input,
-.formGroup textarea {
-  all: unset;
-  border: 1px solid white;
-  padding: 10px;
-  color: white;
-  font-size: 1.6rem;
-  transition: all 0.15s ease-in-out;
-}
-
-.formGroup input:focus,
-.formGroup textarea:focus {
-  box-shadow: 3px 3px 0 rgba(252, 92, 124, 1);
-}
-
-.formGroup button {
-  align-self: flex-start;
-}
-
 .socials {
   width: 70%;
 }
