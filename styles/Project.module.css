@@ -1,0 +1,152 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 30px 0;
+  display: flex;
+  gap: 35px;
+  color: white;
+}
+
+.projectImage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImage .imageContainer img {
+  margin-top: 10px;
+  box-shadow: 6px 6px 0 rgba(252, 92, 124, 1);
+  border: 2px solid #fc5c7d;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.imageSelector {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.imagePreview {
+  width: 80px;
+  height: 80px;
+}
+
+.imagePreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.imagePreview.selectedImg {
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  padding: 2px;
+}
+
+.imagePreview.selectedImg img {
+  transition: all 0.15s ease-in-out;
+  background: black;
+  padding: 4px;
+}
+
+.projectInfo {
+  width: 90%;
+}
+
+.projectInfo h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.projectInfo h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.infoGroup {
+  margin-bottom: 25px;
+}
+
+.infoGroup p:nth-child(1) {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.infoGroup p:nth-child(2),
+.infoGroup li {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.techStack {
+  padding: 0;
+  list-style: none;
+}
+
+.techStack li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.techStack li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fc5c7d;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+}
+
+.actions a {
+  width: 100%;
+}
+
+.actions .actionTriggerWrapper {
+  margin-top: 10px;
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  padding: 3px;
+  width: 100%;
+}
+
+.actionTrigger {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background: black;
+  transition: all 0.25s ease-in-out;
+}
+
+.actionTrigger:hover {
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  cursor: pointer;
+}
+
+.actionTrigger p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

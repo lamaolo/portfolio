@@ -27,3 +27,14 @@ a {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+/* 
+.alice-carousel {
+  position: relative !important;
+  width: 100% !important;
+  background: green;
+  height: 100% !important;
+}
+
+.alice-carousel__stage-item {
+  height: 100% !important;
+} */

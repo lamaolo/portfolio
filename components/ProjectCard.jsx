@@ -3,14 +3,7 @@ import Link from "next/link";
 
 import styles from "../styles/ProjectCard.module.css";
 
-const ProjectCard = ({
-  name,
-  id,
-  picture,
-  description,
-  githubLink,
-  liveViewLink,
-}) => {
+const ProjectCard = ({ name, id, pictures, description }) => {
   return (
     <article className={styles.container}>
       <div className={styles.content}>
@@ -19,7 +12,7 @@ const ProjectCard = ({
           width="200px"
           objectFit="cover"
           layout="responsive"
-          src={picture}
+          src={pictures[0]}
           alt={name}
         />
         <section className={styles.info}>

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Scrum.io",
+    "description": "Scrum.io is a platform designed to manage projects based on agile methodologies, providing a set of tools and utilities for both scrum masters and developers.",
+    "pictures": [
+      "/scrum-io/scrum-io-1.JPG",
+      "/scrum-io/scrum-io-2.JPG",
+      "/scrum-io/scrum-io-3.JPG"
+    ],
+    "liveViewLink": "https://scrum-io.vercel.app/",
+    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
+    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+  },
+  {
+    "id": 2,
+    "name": "Scrum.io",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "pictures": [
+      "/scrum-io/scrum-io-1.JPG",
+      "/scrum-io/scrum-io-2.JPG",
+      "/scrum-io/scrum-io-3.JPG"
+    ],
+    "liveViewLink": "https://scrum-io.vercel.app/",
+    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
+    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+  },
+  {
+    "id": 3,
+    "name": "Scrum.io",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "pictures": [
+      "/scrum-io/scrum-io-1.JPG",
+      "/scrum-io/scrum-io-2.JPG",
+      "/scrum-io/scrum-io-3.JPG"
+    ],
+    "liveViewLink": "https://scrum-io.vercel.app/",
+    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
+    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+  },
+  {
+    "id": 4,
+    "name": "Scrum.io",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "pictures": [
+      "/scrum-io/scrum-io-1.JPG",
+      "/scrum-io/scrum-io-2.JPG",
+      "/scrum-io/scrum-io-3.JPG"
+    ],
+    "liveViewLink": "https://scrum-io.vercel.app/",
+    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
+    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+  },
+  {
+    "id": 5,
+    "name": "Scrum.io",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "pictures": [
+      "/scrum-io/scrum-io-1.JPG",
+      "/scrum-io/scrum-io-2.JPG",
+      "/scrum-io/scrum-io-3.JPG"
+    ],
+    "liveViewLink": "https://scrum-io.vercel.app/",
+    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
+    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+  }
+]
