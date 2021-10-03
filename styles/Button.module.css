@@ -22,3 +22,8 @@
 .button.outline:focus-within {
   background: rgba(252, 92, 124, 0.15);
 }
+
+.button.outline[disabled] {
+  background: rgba(252, 92, 124, 0.15);
+  opacity: 0.4;
+}

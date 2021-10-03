@@ -2,9 +2,15 @@ import styles from "../styles/Button.module.css";
 
 // style: solid (default) | outline
 // iconPosition: left (default) | right
-const Button = ({ children, style, icon: Icon, iconPosition = "left" }) => {
+const Button = ({
+  disabled,
+  children,
+  style,
+  icon: Icon,
+  iconPosition = "left",
+}) => {
   return (
-    <button className={`${styles.button} ${styles[style]}`}>
+    <button disabled={disabled} className={`${styles.button} ${styles[style]}`}>
       {Icon && iconPosition === "left" && <Icon />}
       {children}
       {Icon && iconPosition === "right" && <Icon />}

@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { FiChevronsRight } from "react-icons/fi";
+import { AiOutlineCheck } from "react-icons/ai";
+import { VscError } from "react-icons/vsc";
 import { useForm } from "react-hook-form";
 
 import Button from "./Button";
@@ -10,10 +13,44 @@ const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
+  const [isSending, setIsSending] = useState(false);
+  const [messageStatus, setMessageStatus] = useState({
+    success: undefined,
+    error: undefined,
+  });
 
-  const onSubmit = (data) => {
-    alert(data);
+  const onSubmit = async (data) => {
+    setIsSending(true);
+    try {
+      const req = await fetch("/api/mailer", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (req.status !== 200) throw new Error("Force catch");
+
+      setMessageStatus({
+        success:
+          "Message sent successfully. I will check it and answer as soon as possible.",
+        error: null,
+      });
+
+      reset();
+    } catch (error) {
+      setMessageStatus({
+        success: null,
+        error:
+          "Something went wrong sending the email. Please send it manually to lamaolo.m@gmail.com",
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -96,9 +133,26 @@ const ContactForm = () => {
         )}
       </div>
       <div className={styles.formGroup}>
-        <Button iconPosition="right" icon={FiChevronsRight} style="outline">
+        <Button
+          disabled={isSending}
+          iconPosition="right"
+          icon={FiChevronsRight}
+          style="outline"
+        >
           Send
         </Button>
+      </div>
+      <div className={styles.statusMessages}>
+        {messageStatus.success && (
+          <p className={styles.successMsg}>
+            <AiOutlineCheck /> {messageStatus.success}
+          </p>
+        )}
+        {messageStatus.error && (
+          <p className={styles.errorMsg}>
+            <VscError /> {messageStatus.error}
+          </p>
+        )}
       </div>
     </form>
   );

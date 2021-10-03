@@ -1,4 +1,5 @@
 import { BsEnvelope } from "react-icons/bs";
+import Link from "next/link";
 
 import Button from "./Button";
 
@@ -14,9 +15,13 @@ const Hero = () => {
           A front-end web developer, passionate about tech & design.
         </p>
         <div className={styles.cta}>
-          <Button icon={BsEnvelope} style="outline">
-            Contact me
-          </Button>
+          <Link passHref href="/#contact-me">
+            <a>
+              <Button icon={BsEnvelope} style="outline">
+                Contact me
+              </Button>
+            </a>
+          </Link>
         </div>
       </div>
       <div className={styles.decorationDots}></div>

@@ -51,3 +51,17 @@
 .inputError {
   border: 1px solid rgba(252, 92, 124, 1) !important;
 }
+
+.statusMessages {
+  font-size: 1.4rem;
+}
+
+.successMsg svg,
+.successMsg {
+  color: rgb(57, 255, 57);
+}
+
+.errorMsg svg,
+.errorMsg {
+  color: rgb(255, 57, 57);
+}
