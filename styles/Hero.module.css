@@ -26,6 +26,7 @@
   margin: 0;
   font-size: 6rem;
   font-weight: bolder;
+  background: var(--color1);
   letter-spacing: -2px;
   background-clip: text;
   background-image: var(--gradient);
@@ -33,7 +34,7 @@
   -webkit-text-fill-color: transparent;
   -o-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  animation: hue 3s infinite linear;
+  animation: hue 2s infinite linear;
 }
 
 .content .subtitle {

@@ -1,5 +1,5 @@
-import Head from "next/head";
 import { useEffect, useState } from "react";
+import Animated from "react-mount-animation";
 
 import Header from "../components/Header";
 import Menu from "../components/Menu";
@@ -18,7 +18,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <Component {...pageProps} />
-      {isMenuOpen ? <Menu setIsMenuOpen={setIsMenuOpen} /> : null}
+      <Animated.div
+        show={isMenuOpen}
+        mountAnim={` 
+            0% {opacity: 0}
+            100% {opacity: 1}
+        `}
+        time={0.35}
+      >
+        <Menu setIsMenuOpen={setIsMenuOpen} />
+      </Animated.div>
     </>
   );
 }

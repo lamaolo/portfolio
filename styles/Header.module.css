@@ -3,7 +3,8 @@
   left: 0;
   right: 0;
   background: black;
-  z-index: 1000;
+  z-index: 10000;
+  transition: all 0.35s ease;
 }
 
 .header.noBg {

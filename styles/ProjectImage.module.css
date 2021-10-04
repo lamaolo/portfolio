@@ -27,9 +27,10 @@
 .imagePreview {
   width: 80px;
   height: 80px;
-  padding: 6px;
+  padding: 4px;
   position: relative;
   background: black;
+  transition: all 0.25s ease-in-out;
 }
 
 .imagePreview img {
@@ -42,10 +43,11 @@
 .imageWrapper.selectedImg {
   padding: 2px;
   background: var(--gradient) !important;
+  transition: all 0.25s ease-in-out;
 }
 
 .imagePreview.selectedImg {
-  padding: 2px;
+  padding: 6px;
   background: black;
 }
 

@@ -36,6 +36,8 @@ const ProjectImage = ({
               <Image
                 layout="responsive"
                 width={80}
+                placeholder="blur"
+                blurDataURL={placeholder}
                 height={80}
                 src={picture}
                 alt={name}
