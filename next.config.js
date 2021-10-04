@@ -1,20 +1,20 @@
 module.exports = {
   reactStrictMode: true,
-  // async headers() {
-  //   return [
-  //     {
-  //       source: "/",
-  //       headers: [
+   async headers() {
+     return [
+       {
+         source: "/",
+         headers: [
   //         {
   //           key: "connect-src",
   //           value: "self",
   //         },
-  //         {
-  //           key: "X-Robots-Tag",
-  //           value: "all",
-  //         },
-  //       ],
-  //     },
-  //   ];
-  // },
+           {
+             key: "X-Robots-Tag",
+             value: "all",
+           },
+         ],
+       },
+     ];
+   },
 };
