@@ -53,13 +53,17 @@
   {
     "id": 3,
     "name": "Personal portfolio",
-    "shortDescription": "My personal portfolio! The page I made to introduce myself and show the projects I've worked on.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    "pictures": ["/portfolio/portfolio-1.JPG", "/portfolio/portfolio-1.JPG"],
+    "shortDescription": "My personal portfolio! The page I made to introduce myself and show the projects I've worked on. Intended to be fast, efficient and practical.",
+    "description": "My personal portfolio! The page I made to introduce myself and show the projects I've worked on.\nI designed this page to be extremly performant, fast and accessible so that people can easily see my work and contact me.\nI chose NextJS as the framework to build this website in order to make it as fast and efficient as possible using all the features it includes such as SSG, optimized images, SSR optimizations, etc.",
+    "pictures": [
+      "/portfolio/portfolio-1.JPG",
+      "/portfolio/portfolio-2.JPG",
+      "/portfolio/portfolio-3.JPG"
+    ],
     "placeholder": "/placeholder-2.png",
-    "liveViewLink": "https://scrum-io.vercel.app/",
-    "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
-    "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
+    "liveViewLink": "https://portfolio-lamaolo.vercel.app/",
+    "githubLink": "https://github.com/lamaolo/portfolio",
+    "techStack": ["React", "NextJS", "CSS"]
   },
 
   {
