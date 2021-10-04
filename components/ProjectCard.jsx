@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from "../styles/ProjectCard.module.css";
 
-const ProjectCard = ({ name, id, pictures, shortDescription }) => {
+const ProjectCard = ({ name, id, pictures, shortDescription, placeholder }) => {
   return (
     <article className={styles.container}>
       <div className={styles.content}>
@@ -14,12 +14,14 @@ const ProjectCard = ({ name, id, pictures, shortDescription }) => {
           layout="responsive"
           src={pictures[0]}
           alt={name}
+          placeholder="blur"
+          blurDataURL={placeholder}
         />
         <section className={styles.info}>
           <h3>{name}</h3>
           <p>{shortDescription}</p>
-          <Link href={`/project/${id}`} passHref={true}>
-            View project
+          <Link href={`/project/${id}`}>
+            <a>View project</a>
           </Link>
         </section>
       </div>

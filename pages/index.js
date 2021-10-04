@@ -6,7 +6,9 @@ import MyProjects from "../components/MyProjects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-export default function Home() {
+import projects from "../projects.json";
+
+export default function Home({ projects }) {
   return (
     <>
       <Head>
@@ -15,11 +17,17 @@ export default function Home() {
       <main>
         <Hero />
         <Separator id="my-projects" text="My projects" />
-        <MyProjects />
+        <MyProjects projects={projects} />
         <Separator id="contact-me" text="Contact me" />
         <Contact />
         <Footer />
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: { projects },
+  };
 }

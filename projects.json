@@ -10,6 +10,7 @@
       "/scrum-io/scrum-io-2.JPG",
       "/scrum-io/scrum-io-3.JPG"
     ],
+    "placeholder": "/placeholder-1.png",
     "liveViewLink": "https://scrum-io.vercel.app/",
     "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
     "techStack": [
@@ -33,6 +34,7 @@
       "/ecommerce/ecommerce-3.JPG",
       "/ecommerce/ecommerce-4.JPG"
     ],
+    "placeholder": "/placeholder-2.png",
     "liveViewLink": "https://pasteleria-ecommerce-nextjs-lamaolo.vercel.app/",
     "githubLink": "https://github.com/lamaolo/ecommerce-nextjs",
     "techStack": ["NextJS", "CSS", "MongoDB", "Styled components"]
@@ -43,6 +45,7 @@
     "shortDescription": "Landing page of Bookmark, this is my solution to a challenge from FrontendMentor.",
     "description": "This is my solution to one of the challenges from FrontendMentor, in which I had to recreate the landing page of Bookmark from 0 from a given design. These challenges are very good to improve my CSS & responsive design skills and also gain the ability to recreate a website in HTML/CSS from an image.",
     "pictures": ["/bookmark/bookmark-1.JPG", "/bookmark/bookmark-2.JPG"],
+    "placeholder": "/placeholder-1.png",
     "liveViewLink": "https://bookmark-landingpage-lamaolo.vercel.app/",
     "githubLink": "https://github.com/lamaolo/bookmark-landingpage",
     "techStack": ["React", "CSS", "Styled components"]
@@ -53,6 +56,7 @@
     "shortDescription": "My personal portfolio! The page I made to introduce myself and show the projects I've worked on.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
     "pictures": ["/portfolio/portfolio-1.JPG", "/portfolio/portfolio-1.JPG"],
+    "placeholder": "/placeholder-2.png",
     "liveViewLink": "https://scrum-io.vercel.app/",
     "githubLink": "https://github.com/SHIMER-jpg/Scrum.io/",
     "techStack": ["React", "CSS", "MongoDB", "Express", "NodeJS", "Socket.io"]
@@ -64,6 +68,7 @@
     "shortDescription": "Landing page of Manage, this is my solution to a challenge from FrontendMentor.",
     "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate the landing page of 'Manage'. This challenge was useful to consolidate my knowledge of HTML and CSS layout.",
     "pictures": ["/manage/manage-1.JPG", "/manage/manage-2.JPG"],
+    "placeholder": "/placeholder-4.png",
     "liveViewLink": "https://lamaolo.github.io/manage-landingpage/",
     "githubLink": "https://github.com/lamaolo/manage-landingpage",
     "techStack": ["CSS", "HTML"]
@@ -77,6 +82,7 @@
       "/paper-rock-scissors/paper-rock-scissors-1.JPG",
       "/paper-rock-scissors/paper-rock-scissors-2.JPG"
     ],
+    "placeholder": "/placeholder-3.png",
     "liveViewLink": "https://react-rock-paper-scissors-lamaolo.vercel.app/",
     "githubLink": "https://github.com/lamaolo/react-rock-paper-scissors",
     "techStack": ["React", "CSS", "HTML"]
@@ -87,6 +93,7 @@
     "shortDescription": "Landing page of Room, this is my solution to a challenge from FrontendMentor.",
     "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate the landing page of 'Room'. This particular challenge was extremly useful when I was learning about layouts and positioning in CSS.",
     "pictures": ["/room/room-1.JPG", "/room/room-2.JPG"],
+    "placeholder": "/placeholder-2.png",
     "liveViewLink": "https://lamaolo.github.io/room-landingpage/",
     "githubLink": "https://github.com/lamaolo/room-landingpage",
     "techStack": ["Vanilla JS", "SCSS", "HTML"]
@@ -97,6 +104,7 @@
     "shortDescription": "Landing page of Easy Bank. This is my solution to a challenge from FrontendMentor",
     "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate a whole landing page from an image. This was the first entire project that I built when I started to learn about CSS/HTML layout, responsive design & React.",
     "pictures": ["/easy-bank/easybank-1.JPG", "/easy-bank/easybank-2.JPG"],
+    "placeholder": "/placeholder-1.png",
     "liveViewLink": "https://easybank-landing-git-main-lamaolo.vercel.app/",
     "githubLink": "https://github.com/lamaolo/easybank-landing",
     "techStack": ["React", "CSS", "HTML"]
@@ -111,6 +119,7 @@
       "/ip-tracker/ip-tracker-2.JPG",
       "/ip-tracker/ip-tracker-3.JPG"
     ],
+    "placeholder": "/placeholder-4.png",
     "liveViewLink": "https://ip-tracker.lamaolo.vercel.app/",
     "githubLink": "https://github.com/lamaolo/ip-tracker",
     "techStack": ["React", "CSS", "HTML"]

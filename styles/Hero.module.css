@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   color: white;
+  z-index: 100;
 }
 
 .content p {
@@ -47,18 +48,17 @@
   margin-left: 4px;
 }
 
-.decorationDots {
+.videoBg {
   position: absolute;
   right: 0;
   margin-top: 70px;
   height: 600px;
   width: 600px;
-  background-size: 600px;
-  /* background: linear-gradient(90deg, #000000 21px, transparent 1%) center,
-  linear-gradient(#000000 21px, transparent 1%) center, #ffffff;
-  background-size: 23px 23px; */
-  background-image: url("/hero-gif.gif");
-  background-repeat: no-repeat;
+}
+
+.videoBg video {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes hue {
@@ -85,10 +85,10 @@
     max-width: 390px;
   }
 
-  .decorationDots {
-    margin-top: 180px;
-    width: 350px;
-    background-size: 400px;
+  .videoBg {
+    margin-top: 0px;
+    z-index: 1;
+    width: 450px;
   }
 }
 
@@ -111,8 +111,8 @@
     z-index: 100;
   }
 
-  .decorationDots {
-    height: 350px;
+  .videoBg {
+    height: 300px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -135,7 +135,7 @@
     font-size: 1.3rem;
   }
 
-  .decorationDots {
+  .videoBg {
     height: 350px;
     width: 350px;
     background-size: 350px;

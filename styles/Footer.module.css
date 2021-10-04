@@ -13,6 +13,6 @@
 }
 
 .container a {
-  color: var(--color2);
+  color: rgb(30, 1, 160);
   font-weight: 600;
 }

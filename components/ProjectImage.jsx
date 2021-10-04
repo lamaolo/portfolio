@@ -1,7 +1,13 @@
 import Image from "next/image";
 import styles from "../styles/ProjectImage.module.css";
 
-const ProjectImage = ({ imageToShow, name, pictures, handleImageClick }) => {
+const ProjectImage = ({
+  imageToShow,
+  name,
+  pictures,
+  handleImageClick,
+  placeholder,
+}) => {
   return (
     <section className={styles.projectImage}>
       <div className={styles.imageContainer}>
@@ -11,6 +17,8 @@ const ProjectImage = ({ imageToShow, name, pictures, handleImageClick }) => {
           layout="responsive"
           src={imageToShow}
           alt={name}
+          placeholder="blur"
+          blurDataURL={placeholder}
         />
       </div>
       <div className={styles.imageSelector}>
@@ -25,7 +33,13 @@ const ProjectImage = ({ imageToShow, name, pictures, handleImageClick }) => {
               onClick={() => handleImageClick(picture)}
               className={styles.imagePreview}
             >
-              <Image layout="fill" src={picture} alt={name} />
+              <Image
+                layout="responsive"
+                width={80}
+                height={80}
+                src={picture}
+                alt={name}
+              />
             </div>
           </article>
         ))}
