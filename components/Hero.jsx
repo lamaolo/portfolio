@@ -24,7 +24,11 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.decorationDots}></div>
+      <div className={styles.videoBg}>
+        <video poster="/poster.JPG" autoPlay muted loop>
+          <source src="/hero-gif.mp4" type="video/mp4" />
+        </video>
+      </div>
     </section>
   );
 };

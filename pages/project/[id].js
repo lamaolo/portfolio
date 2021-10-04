@@ -26,6 +26,7 @@ export default function Home({ project }) {
           pictures={project.pictures}
           imageToShow={imageToShow}
           handleImageClick={handleImageClick}
+          placeholder={project.placeholder}
         />
         <ProjectInfo project={project} />
       </main>
