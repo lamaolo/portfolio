@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import styles from "../styles/Menu.module.css";
 
-const Menu = ({ setIsMenuOpen }) => {
+const Menu = ({ setIsMenuOpen, isMenuVisible }) => {
   const [selectedGradient, setSelectedGradient] = useState(
     () => Number(localStorage.getItem("gradient")) || 1
   );
@@ -19,7 +19,11 @@ const Menu = ({ setIsMenuOpen }) => {
   };
 
   return (
-    <section className={styles.container}>
+    <section
+      className={`${styles.container} ${
+        !isMenuVisible ? styles.closing : styles.opening
+      }`}
+    >
       <div className={styles.content}>
         <section className={styles.socials}>
           <div className={styles.item}>

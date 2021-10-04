@@ -11,6 +11,16 @@
   z-index: 1000;
 }
 
+.opening {
+  animation: fadeIn 0.35s;
+  animation-iteration-count: 1;
+}
+
+.closing {
+  animation: fadeOut 0.35s linear;
+  animation-iteration-count: 1;
+}
+
 .content {
   margin: 0 auto;
   padding: 25px 30px;
@@ -19,6 +29,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.content * {
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.08));
 }
 
 .title {
@@ -95,10 +109,14 @@
   cursor: pointer;
   padding: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 0px solid transparent;
+  transition: all 0.15s ease-in-out;
 }
 
-.selected {
-  border: 2px solid white;
+.customize > div > div.selected {
+  border: 2px solid white !important;
+  height: 70px;
+  width: 70px;
 }
 
 .customizeOne {
@@ -115,6 +133,25 @@
 
 .customizeFour {
   background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 767px) {
