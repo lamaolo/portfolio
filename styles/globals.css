@@ -1,27 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=block");
 
 body.gradient1 {
-  --gradient: linear-gradient(to right, #6a82fb, #fc5c7d);
-  --color1: #6a82fb;
-  --color2: #fc5c7d;
+  --gradient: linear-gradient(to right, rgb(106, 130, 251), rgb(252, 92, 125));
+  --color1: rgb(106, 130, 251);
+  --color2: rgb(252, 92, 125);
 }
 
 body.gradient2 {
-  --gradient: linear-gradient(to right, #ff5f6d, #ffc371);
-  --color1: #ff5f6d;
-  --color2: #ffc371;
+  --gradient: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
+  --color1: rgb(255, 95, 109);
+  --color2: rgb(255, 195, 113);
 }
 
 body.gradient3 {
-  --gradient: linear-gradient(to right, #c02425, #f0cb35);
-  --color1: #c02425;
-  --color2: #f0cb35;
+  --gradient: linear-gradient(to right, rgb(192, 36, 37), rgb(240, 203, 53));
+  --color1: rgb(192, 36, 37);
+  --color2: rgb(240, 203, 53);
 }
 
 body.gradient4 {
-  --gradient: linear-gradient(to right, #c2e59c, #64b3f4);
-  --color1: #c2e59c;
-  --color2: #64b3f4;
+  --gradient: linear-gradient(to right, rgb(194, 229, 156), rgb(100, 179, 244));
+  --color1: rgb(194, 229, 156);
+  --color2: rgb(100, 179, 244);
 }
 
 html {
