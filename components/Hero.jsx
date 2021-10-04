@@ -25,8 +25,8 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.videoBg}>
-        <video poster="/poster.JPG" autoPlay muted loop>
-          <source src="/hero-gif.mp4" type="video/mp4" />
+        <video preload="metadata" autoPlay muted loop>
+          <source src="/hero-gif.mp4#t=0.5" type="video/mp4" />
         </video>
       </div>
     </section>
