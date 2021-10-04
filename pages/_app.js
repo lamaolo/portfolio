@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 import Header from "../components/Header";
@@ -30,6 +31,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={handleToggleMenu} />
       <Component {...pageProps} />
 

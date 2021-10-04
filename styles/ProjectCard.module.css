@@ -49,6 +49,7 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
+  background-color: white;
   background-clip: text;
   background-image: var(--gradient);
   background-clip: text;
