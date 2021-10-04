@@ -50,30 +50,30 @@ const Menu = ({ setIsMenuOpen, isMenuVisible }) => {
             <section className={styles.customize}>
               <p className={styles.title}>Customize</p>
               <div>
-                <div
+                <button
                   onClick={() => handleChangeGradient(1)}
                   className={`${styles.customizeOne} ${
                     selectedGradient === 1 && styles.selected
                   }`}
-                ></div>
-                <div
+                ></button>
+                <button
                   onClick={() => handleChangeGradient(2)}
                   className={`${styles.customizeTwo} ${
                     selectedGradient === 2 && styles.selected
                   }`}
-                ></div>
-                <div
+                ></button>
+                <button
                   onClick={() => handleChangeGradient(3)}
                   className={`${styles.customizeThree} ${
                     selectedGradient === 3 && styles.selected
                   }`}
-                ></div>
-                <div
+                ></button>
+                <button
                   onClick={() => handleChangeGradient(4)}
                   className={`${styles.customizeFour} ${
                     selectedGradient === 4 && styles.selected
                   }`}
-                ></div>
+                ></button>
               </div>
             </section>
           </div>

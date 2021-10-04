@@ -103,7 +103,7 @@
   gap: 20px;
 }
 
-.customize > div > div {
+.customize > div > button {
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -113,7 +113,11 @@
   transition: all 0.15s ease-in-out;
 }
 
-.customize > div > div.selected {
+/* .customize > div > div:focus {
+  border: 2px solid white;
+} */
+
+.customize > div > button.selected {
   border: 2px solid white !important;
   height: 70px;
   width: 70px;

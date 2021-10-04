@@ -10,7 +10,8 @@ const Header = ({ setIsMenuOpen, isMenuOpen }) => {
         <Link href="/">lamaolo</Link>
         <Hamburger
           role="button"
-          aria-label="Toggle menu"
+          label="Toggle menu"
+          hideOutline={false}
           color="white"
           toggled={isMenuOpen}
           toggle={setIsMenuOpen}

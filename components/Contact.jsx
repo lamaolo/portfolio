@@ -17,6 +17,7 @@ const Contact = () => {
               href="https://github.com/lamaolo"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
               <RiGithubLine color="white" size={40} />
             </a>
@@ -24,10 +25,11 @@ const Contact = () => {
               href="https://www.linkedin.com/in/lucero-amaolo/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
               <RiLinkedinLine color="white" size={40} />
             </a>
-            <a href="mailto:lamaolo.m@gmail.com">
+            <a href="mailto:lamaolo.m@gmail.com" aria-label="Email">
               <AiOutlineMail color="white" size={40} />
             </a>
           </div>
