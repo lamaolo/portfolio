@@ -51,6 +51,12 @@ class MyDocument extends Document {
             content="Hey! I'm Lucero Amaolo, a front-end developer. This is my personal portfolio. Here you can see my work and contact me."
           />
           <meta property="twitter:image" content="/seo-bg.png" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
