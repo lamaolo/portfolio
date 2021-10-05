@@ -49,12 +49,7 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
-  background-clip: text;
-  background-color: var(--color2);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: var(--color2);
   font-weight: 600;
   font-size: 1.4rem;
   gap: 15px;
