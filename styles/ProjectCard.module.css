@@ -49,9 +49,8 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
-  background-color: white;
   background-clip: text;
-  background-image: var(--gradient);
+  background-color: var(--color2);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -o-text-fill-color: transparent;
@@ -59,6 +58,26 @@
   font-weight: 600;
   font-size: 1.4rem;
   gap: 15px;
+}
+
+:global(.gradient1) .info a {
+  filter: invert(48%) sepia(61%) saturate(812%) hue-rotate(304deg)
+    brightness(98%) contrast(102%) !important;
+}
+
+:global(.gradient2) .info a {
+  filter: invert(67%) sepia(8%) saturate(3010%) hue-rotate(336deg)
+    brightness(122%) contrast(109%);
+}
+
+:global(.gradient3) .info a {
+  filter: invert(48%) sepia(61%) saturate(812%) hue-rotate(304deg)
+    brightness(98%) contrast(102%);
+}
+
+:global(.gradient4) .info a {
+  filter: invert(61%) sepia(48%) saturate(616%) hue-rotate(174deg)
+    brightness(102%) contrast(91%);
 }
 
 .info a::after {
