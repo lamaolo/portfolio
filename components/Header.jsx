@@ -6,7 +6,7 @@ import styles from "../styles/Header.module.css";
 const Header = ({ setIsMenuOpen, isMenuOpen }) => {
   return (
     <header className={`${styles.header} ${isMenuOpen ? styles.noBg : null}`}>
-      <div>
+      <div className={styles.content}>
         <Link href="/">lamaolo</Link>
         <Hamburger
           role="button"
@@ -14,6 +14,7 @@ const Header = ({ setIsMenuOpen, isMenuOpen }) => {
           hideOutline={false}
           color="white"
           toggled={isMenuOpen}
+          size={26}
           toggle={setIsMenuOpen}
         ></Hamburger>
       </div>

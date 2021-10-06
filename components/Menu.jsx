@@ -34,17 +34,17 @@ const Menu = ({ setIsMenuOpen, isMenuVisible }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiGithubLine color="white" size={40} />
+                <RiGithubLine color="white" />
               </a>
               <a
                 href="https://www.linkedin.com/in/lucero-amaolo/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiLinkedinLine color="white" size={40} />
+                <RiLinkedinLine color="white" />
               </a>
               <a href="mailto:lamaolo.m@gmail.com">
-                <AiOutlineMail color="white" size={40} />
+                <AiOutlineMail color="white" />
               </a>
             </div>
             <section className={styles.customize}>

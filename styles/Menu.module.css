@@ -47,6 +47,7 @@
 .socialIcons {
   display: flex;
   gap: 25px;
+  font-size: 40px;
 }
 
 .socialIcons a svg:hover {
@@ -174,6 +175,10 @@
     justify-content: center;
   }
 
+  .navigation li::before {
+    display: none;
+  }
+
   .customize > div {
     flex-wrap: wrap;
   }
@@ -181,5 +186,39 @@
   .customize > div > div {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content {
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .customize > p {
+    margin-top: 0px;
+  }
+
+  .socialIcons {
+    font-size: 35px;
+  }
+
+  .customize > div > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .customize > div > button.selected {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navigation li a {
+    font-size: 2rem;
+    margin-bottom: 17px;
   }
 }
