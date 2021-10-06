@@ -61,8 +61,8 @@
 }
 
 :global(.gradient2) .info a {
-  filter: invert(67%) sepia(8%) saturate(3010%) hue-rotate(336deg)
-    brightness(122%) contrast(109%);
+  filter: invert(84%) sepia(86%) saturate(2268%) hue-rotate(307deg)
+    brightness(102%) contrast(100%);
 }
 
 :global(.gradient3) .info a {
@@ -71,8 +71,8 @@
 }
 
 :global(.gradient4) .info a {
-  filter: invert(61%) sepia(48%) saturate(616%) hue-rotate(174deg)
-    brightness(102%) contrast(91%);
+  filter: invert(34%) sepia(100%) saturate(752%) hue-rotate(254deg)
+    brightness(104%) contrast(126%);
 }
 
 .info a::after {

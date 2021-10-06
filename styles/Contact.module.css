@@ -29,7 +29,7 @@
 
 .socialIcons a svg:hover {
   transition: all 0.15s ease-in-out;
-  color: #fc5c7d !important;
+  color: var(--color2) !important;
 }
 
 @media screen and (max-width: 767px) {

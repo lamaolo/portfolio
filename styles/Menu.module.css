@@ -51,7 +51,7 @@
 
 .socialIcons a svg:hover {
   transition: all 0.15s ease-in-out;
-  color: #fc5c7d !important;
+  color: var(--color2) !important;
 }
 
 .navigation {
@@ -113,10 +113,6 @@
   transition: all 0.15s ease-in-out;
 }
 
-/* .customize > div > div:focus {
-  border: 2px solid white;
-} */
-
 .customize > div > button.selected {
   border: 2px solid white !important;
   height: 70px;
@@ -136,7 +132,7 @@
 }
 
 .customizeFour {
-  background: linear-gradient(to right, #c2e59c, #64b3f4);
+  background: linear-gradient(to right, #7f00ff, #e100ff);
 }
 
 @keyframes fadeIn {

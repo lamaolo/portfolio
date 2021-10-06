@@ -7,7 +7,7 @@ body.gradient1 {
 body.gradient2 {
   --gradient: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
   --color1: rgb(255, 95, 109);
-  --color2: rgb(255, 195, 113);
+  --color2: #ffc371;
 }
 
 body.gradient3 {
@@ -17,9 +17,9 @@ body.gradient3 {
 }
 
 body.gradient4 {
-  --gradient: linear-gradient(to right, rgb(194, 229, 156), rgb(100, 179, 244));
-  --color1: rgb(194, 229, 156);
-  --color2: rgb(100, 179, 244);
+  --gradient: linear-gradient(to right, #7f00ff, #e100ff);
+  --color1: #7f00ff;
+  --color2: #e100ff;
 }
 
 html {
