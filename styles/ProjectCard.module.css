@@ -49,7 +49,7 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
-  color: var(--color2);
+  color: var(--color1);
   font-weight: 600;
   font-size: 1.4rem;
   gap: 15px;
@@ -57,7 +57,7 @@
 
 :global(.gradient1) .info a {
   filter: invert(48%) sepia(61%) saturate(812%) hue-rotate(304deg)
-    brightness(98%) contrast(102%) !important;
+    brightness(98%) contrast(102%);
 }
 
 :global(.gradient2) .info a {

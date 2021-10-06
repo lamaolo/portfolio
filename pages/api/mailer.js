@@ -28,8 +28,8 @@ export default async function handler(req, res) {
       from: `Portafolio | ${name} <${email}>`,
       to: "lamaolo.m@gmail.com",
       subject: `PORTAFOLIO: ${subject}`,
-      text: message,
-      html: `<div>${message}</div>`,
+      text: `New message from: ${email} \nmessage`,
+      html: `<div>New message from ${email} <br/> ${message}</div>`,
     });
 
     return res.status(200).send("Mensaje enviado: ", info);
