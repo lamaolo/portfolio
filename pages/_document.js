@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <meta name="robots" content="all" />
           <meta
             httpEquiv="Content-Security-Policy"
-            content="connect-src 'self'"
+            content="connect-src 'self' vitals.vercel-insights.com"
           />
           <meta charSet="utf-8" />
           <meta name="title" content="Lucero Amaolo" />
