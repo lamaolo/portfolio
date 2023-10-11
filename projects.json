@@ -103,17 +103,6 @@
     "techStack": ["Vanilla JS", "SCSS", "HTML"]
   },
   {
-    "id": 9,
-    "name": "Easy bank landing page",
-    "shortDescription": "Landing page of Easy Bank. This is my solution to a challenge from FrontendMentor",
-    "description": "This is my solution to a challenge from Frontend Mentor, in which I had to recreate a whole landing page from an image. This was the first entire project that I built when I started to learn about CSS/HTML layout, responsive design & React.",
-    "pictures": ["/easy-bank/easybank-1.JPG", "/easy-bank/easybank-2.JPG"],
-    "placeholder": "/placeholder-1.png",
-    "liveViewLink": "https://easybank-landing-git-main-lamaolo.vercel.app/",
-    "githubLink": "https://github.com/lamaolo/easybank-landing",
-    "techStack": ["React", "CSS", "HTML"]
-  },
-  {
     "id": 8,
     "name": "IP tracker",
     "shortDescription": "Application that tracks a given IP and show its geolocalization on the map, this is my solution to a challenge from FrontendMentor.",
